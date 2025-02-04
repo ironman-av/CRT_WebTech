@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Marquee</title>
+    <style>
+        body {
+            background-color: rgb(4, 2, 41);
+            color: rgb(121, 121, 121);
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 50px;
+        }
+
+        .marquee-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            height: 60px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 5px;
+            
+        }
+
+        .marquee-text {
+            position: absolute;
+            font-size: 22px;
+            font-weight: bold;
+            white-space: nowrap;
+            width: 100%;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .scroll-left {
+            animation: scrollLeft 10s linear infinite;
+        }
+
+        @keyframes scrollLeft {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .bounce {
+            animation: bounce 3s ease-in-out infinite alternate;
+            text-align: center;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(50%);
+            }
+        }
+
+        .slide-up {
+            animation: slideUp 5s linear infinite;
+        }
+
+        @keyframes slideUp {
+            from {
+                top: 100%;
+            }
+            to {
+                top: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="marquee-container">
+        <div class="marquee-text scroll-left">Welcome 😊😁😁</div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee-text scroll-left">Good Morning 🌝🌝</div>
+    </div>
+
+    <div class="marquee-container">
+        <div class="marquee-text scroll-left">Have a Nice Day ❤️❤️</div>
+    </div>
+
+</body>
+</html>

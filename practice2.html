@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacked Containers</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            height: 200px;
+            width: 350px;
+            font-size: xx-large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            border: 10px ridge white;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+        #first {
+            background-color: #000030;
+        }
+        #second {
+            background-color: #303030;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="container">First Container</div>
+    <div id="second" class="container">Second Container</div>
+</body>
+</html>
