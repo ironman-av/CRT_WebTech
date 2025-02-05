@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(34, 1, 1);
+            margin: 50px;
+        }
+        h1{
+            color: rgb(100, 100, 48);
+        }
+        h2{
+            color: rgb(150, 115, 73);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px;
+        }
+        img{
+            width:200px;
+            border-radius: 10px;
+            box-shadow: 5px 6px 15px #dfd7d7;
+            transition: transform 0.5s ease-in-out;
+        }
+        .zoom:hover{
+            transform: scale(1.5);
+        }
+        .zoom-animate{
+            animation: zoomEffect 5s infinite alternate ease-in-out;
+        } 
+        @keyframes zoomEffect{
+            0% { transform: scale(1);}
+            100%{ transform:scale(1.3);}
+        } 
+          
+        .stretch:hover{
+            transform: scalex(1.5);
+        }
+
+        .tall:hover{
+           transform: scaley(1.5);
+        }
+        .shrink:hover{
+            transform: scale(0.1);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>scale effects</h1>
+    <div >
+        <h2> hover to zoom</h2>
+        <img src ="C:\Users\haree\OneDrive\Pictures\luffy.jpg" alt="zoom image" class="zoom">
+    </div>
+    <div>
+        <h2> continous zoom in &out </h2>
+        <img src ="C:\Users\haree\OneDrive\Pictures\luffy.jpg" alt="zoom animation" class="zoom-animate">
+    </div>
+    <div>
+        <h2> hover to stretch horizontally</h2>
+        <img src ="C:\Users\haree\OneDrive\Pictures\luffy.jpg" alt="stretch image " class="stretch">
+    </div>
+    <div>
+        <h2> hover to stretch vertically</h2>
+        <img src ="C:\Users\haree\OneDrive\Pictures\luffy.jpg" alt="tall image" class="tall">
+    </div>
+    <div>
+        <h2> how to shrink</h2>
+        <img src ="C:\Users\haree\OneDrive\Pictures\luffy.jpg" alt="shrink image" class="shrink">
+    </div>
+  
+</body>
+</html>
